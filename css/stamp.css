@@ -1,5 +1,24 @@
 @charset "UTF-8";
 
+#con1 { width: 100%; height: 0; padding-bottom: 100%; background-image: url(../img/stamp/background1.png);}
+
+.bg-image-full {
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+}
+
+#con1 .text-shadow-pop-br p { font-weight: bold; font-size: 100px; }
+
+.text-shadow-pop-br {
+  color: #fff;
+  position: absolute;
+  left: 30%;
+  top: 30%;
+  -webkit-animation: text-shadow-pop-br 0.6s 0.1s both;
+	        animation: text-shadow-pop-br 0.6s 0.1s both;
+}
 
 
 
@@ -10,10 +29,40 @@
 
 
 
+ @-webkit-keyframes text-shadow-pop-br {
+  0% {
+    text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555;
+    -webkit-transform: translateX(0) translateY(0);
+            transform: translateX(0) translateY(0);
+  }
+  100% {
+    text-shadow: 1px 1px #555555, 2px 2px #555555, 3px 3px #555555, 4px 4px #555555, 5px 5px #555555, 6px 6px #555555, 7px 7px #555555, 8px 8px #555555;
+    -webkit-transform: translateX(-8px) translateY(-8px);
+            transform: translateX(-8px) translateY(-8px);
+  }
+}
+@keyframes text-shadow-pop-br {
+  0% {
+    text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555;
+    -webkit-transform: translateX(0) translateY(0);
+            transform: translateX(0) translateY(0);
+  }
+  100% {
+    text-shadow: 1px 1px #555555, 2px 2px #555555, 3px 3px #555555, 4px 4px #555555, 5px 5px #555555, 6px 6px #555555, 7px 7px #555555, 8px 8px #555555;
+    -webkit-transform: translateX(-8px) translateY(-8px);
+            transform: translateX(-8px) translateY(-8px);
+  }
+}
 
 
 
-
+.container {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
 
 @media (min-width: 576px) {
    .container {
@@ -24,7 +73,9 @@
    .container {
     max-width: 720px;
   }
-
+  #con1 {
+    padding-bottom: 50%;
+  }
 }
 @media (min-width: 992px) {
    .container {
@@ -135,13 +186,6 @@ button:not(:disabled),
   cursor: pointer;
 }
 
-.container {
-  width: 100%;
-  padding-right: var(--bs-gutter-x, 0.75rem);
-  padding-left: var(--bs-gutter-x, 0.75rem);
-  margin-right: auto;
-  margin-left: auto;
-}
 
 .collapse:not(.show) {
   display: none;
