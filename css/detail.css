@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+/*navbar*/
+#con0 { position: fixed; width: 100%; z-index: 1; }
+
 /*header*/
 #con1 { background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url(../img/detail1/background1.jpg); padding-top: 10rem !important; padding-bottom: 3rem !important; max-height: 500px; }
 #con1 .text-white span{ font-size: 20px;}

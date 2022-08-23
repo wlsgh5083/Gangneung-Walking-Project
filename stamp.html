@@ -19,19 +19,20 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Stamp</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Login</a></li>
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="stamp.html">Stamp</a></li>
+                        <li class="nav-item"><a class="nav-link" href="signin.html">Login</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
 
         <!--event-->
-        <section id="con1">
+        <section id="con1" class="hidden">
             <div class="event-container">
                 <div class="event-text">
                     <h1>로그인 후에 스탬프를 확인하세요</h1>
+                    <button type="button" onclick="location.href='signin.html'">바로가기</button>
                 </div>
             </div>
         </section>
@@ -51,7 +52,7 @@
                 <div class="step-container">
                     <div class="flex-container-reverse">
                         <div class="flex-video">
-                            <video src="video/GuideVideo01.mp4" autoplay loop></video>
+                            <video poster="img/stamp/poster-1.jpg" src="video/GuideVideo01.mp4" autoplay loop></video>
                         </div>
                         <div class="flex-text">
                             <div class="flex-title-text" >Step1. 코스 선택</div>
@@ -64,7 +65,7 @@
                 <div class="step-container">
                     <div class="flex-container">
                         <div class="flex-video">
-                            <video src="video/GuideVideo02.mp4" autoplay loop></video>
+                            <video poster="img/stamp/poster-2.jpg" src="video/GuideVideo02.mp4" autoplay loop></video>
                         </div>
                         <div class="flex-text">
                             <div class="flex-title-text" >Step2. 함께 걷기</div>
@@ -77,7 +78,7 @@
                 <div class="step-container">
                     <div class="flex-container-reverse">
                         <div class="flex-video">
-                            <video src="video/GuideVideo03.mp4" autoplay loop></video>
+                            <video poster="img/stamp/poster-3.jpg" src="video/GuideVideo03.mp4" autoplay loop></video>
                         </div>
                         <div class="flex-text">
                             <div class="flex-title-text" >Step3. QR 코드 인증</div>
@@ -90,7 +91,7 @@
                 <div class="step-container">
                     <div class="flex-container">
                         <div class="flex-video">
-                            <video src="video/GuideVideo04.mp4" autoplay loop></video>
+                            <video poster="img/stamp/poster-4.jpg" src="video/GuideVideo04.mp4" autoplay loop></video>
                         </div>
                         <div class="flex-text">
                             <div class="flex-title-text" >Step4. 선물 받기</div>
